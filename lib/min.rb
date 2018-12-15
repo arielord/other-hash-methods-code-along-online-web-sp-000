@@ -20,4 +20,5 @@ def get_the_min(groceries)
       end
     end
   end
+  temp
 end
