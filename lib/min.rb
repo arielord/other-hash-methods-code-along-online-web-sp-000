@@ -10,5 +10,14 @@ groceries = {
 
 def get_the_min(groceries)
   #code your solution here!
-  m = groceries.min.min
+  temp = nil
+  groceries.each do |key, value|
+    if temp == nil
+      temp = value.min
+    else
+      if value.min < temp
+        temp = value.min
+      end
+    end
+  end
 end
